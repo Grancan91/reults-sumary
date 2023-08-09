@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Your Result
-  76
-  of 100
+  <section id="container-card">
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <section id="result-section">
 
-  Reaction
-  80 / 100
+      <h1 id="result-text-title">Your Result</h1>
+      <section id="circle-section">
+        <section id="circle-text-container">
+          <h3 id="score-text-points">76</h3>
+          <p id="score-text-total-points">of 100</p>
+        </section>
+      </section>
 
-  Memory
-  92 / 100
+      <h2 id="score-text-title">Great</h2>
+      <p id="score-text-details">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+    <section id="sumary-section">
+      <h1 id="sumary-text-title">Summary</h1>
 
-  Verbal
-  61 / 100
+      <section class="stats-container reaction">
+        <section class="stats-title-container">
+          <img class="stats-title-image" src="./assets/images/icon-reaction.svg" alt="">
+          <h3>Reaction</h3>
+        </section>
+        <section class="stats-score-container">
+          <h3 id="score-points">80</h3>
+          <h3 id="score-total-points">/ 100</h3>
+        </section>
+      </section>
 
-  Visual
-  72 / 100
+        <section class="stats-container memory">
+          <section class="stats-title-container">
+            <img class="stats-title-image" src="./assets/images/icon-memory.svg" alt="">
+            <h3>Memory</h3>
+          </section>
+          <section class="stats-score-container">
+            <h3 id="score-points">92</h3>
+            <h3 id="score-total-points">/ 100</h3>
+          </section>
+        </section>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <section class="stats-container verbal">
+            <section class="stats-title-container">
+              <img class="stats-title-image" src="./assets/images/icon-verbal.svg" alt="">
+              <h3>Verbal</h3>
+            </section>
+            <section class="stats-score-container">
+              <h3 id="score-points">61</h3>
+              <h3 id="score-total-points">/ 100</h3>
+            </section>
+          </section>
+
+      <section class="stats-container visual">
+        <section class="stats-title-container">
+          <img class="stats-title-image" src="./assets/images/icon-visual.svg" alt="">
+          <h3>Visual</h3>
+        </section>
+        <section class="stats-score-container">
+          <h3 id="score-points">72</h3>
+          <h3 id="score-total-points">/ 100</h3>
+        </section>
+      </section>
+      
+      <button>Continue</button>
+    </section>
+  </section>
+
 </body>
+
 </html>
