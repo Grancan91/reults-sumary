@@ -13,6 +13,7 @@
     --Violet-blue: hsla(256, 72%, 46%, 1);
     --Persian-blue: hsla(241, 72%, 46%, 0);
     --background-top-circle: rgb(61, 29, 190);
+    --background-botton-circle: rgba(43, 0, 233, 0.119);
 
     --White: hsl(0, 0%, 100%);
     --white-background: rgb(254,254,254);
@@ -22,10 +23,7 @@
 
 }
 
-@font-face {
-    font-family: 'Hanken';
-    src: url('https://fonts.google.com/specimen/Hanken+Grotesk');
-}
+
 
 body {
     background-color: white;
@@ -33,7 +31,7 @@ body {
     place-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 #container-card {
@@ -42,13 +40,14 @@ body {
     grid-template-columns: 1fr 1fr;
     width: 738px;
     height: 512px;
-    border-radius: 5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4%;
+    position: relative;
+    box-shadow: 18px 18px 18px hsla(241, 100%, 89%, 0.505);
 }
 
 #result-section {
     background: linear-gradient(180deg, var(--background-top), var(--background-bot));
-    border-radius: 5%;
+    border-radius: 4%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -68,7 +67,7 @@ body {
     width: 200px;
     height: 200px;
     margin-top: 20px;
-    background: linear-gradient(180deg, var(--background-top-circle), var(--Cobalt-blue-light));
+    background: linear-gradient(180deg, var(--background-top-circle), var(--background-botton-circle));
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -105,7 +104,7 @@ body {
 
 #sumary-section {
     background-color: var(--white-background);
-    border-radius: 5%;
+    border-radius: 4%;
     padding: 24px;
     padding-right: 38px;
     padding-left: 38px;
@@ -116,6 +115,7 @@ body {
     font-weight: 800;
     margin-top: 16px;
     margin-bottom: 32px;
+    color: rgba(0, 0, 0, 0.8);
     
 }
 
@@ -138,7 +138,6 @@ body {
 }
 
 .stats-score-text{
-    color: black;
     margin: 0;
 }
 
@@ -148,10 +147,11 @@ body {
 }
 
 #score-points{
-    color: black;
+    color: rgba(0, 0, 0, 0.8);
     font-weight: 800;
+    font-size: 17px;
     margin: 0;
-    margin-right: 2px;
+    margin-right: 6px;
 }
 
 #score-total-points{
@@ -190,5 +190,6 @@ button{
     background-color: var(--Dark-gray-blue);
     font-weight: 400;
     font-size: 18px;
-    border-color: black;
+    border: 0.8px black solid;
+
 }
